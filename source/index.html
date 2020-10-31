@@ -4,9 +4,165 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Ohara</title>
 </head>
-<body>
-  <h1>Hello world</h1>
+<body class="page">
+  <nav class="page-menu">
+    <a class="logo logo-icon" href="#">
+      Ohara
+    </a>
+
+    <a class="button join-link" href="#">
+      join a course
+    </a>
+
+    <ul class="page-menu__list">
+      <li class="page-menu__item">
+        <a class="page-menu__link" href="#">Dashboard</a>
+      </li>
+      <li class="page-menu__item">
+        <a class="page-menu__link" href="#">All courses</a>
+      </li>
+      <li class="page-menu__item">
+        <a class="page-menu__link" href="#">Resources</a>
+      </li>
+      <li class="page-menu__item">
+        <a class="page-menu__link" href="#">Friends</a>
+      </li>
+      <li class="page-menu__item">
+        <a class="page-menu__link" href="#">Chats</a>
+      </li>
+      <li class="page-menu__item">
+        <a class="page-menu__link" href="#">Settings</a>
+      </li>
+    </ul>
+
+    <ul class="page-menu__upgrade">
+      <li class="page-menu__upgrade-item">
+        <a class="page-menu__upgrade-link" href="#">Upgrade</a>
+      </li>
+    </ul>
+  </nav>
+
+  <header class="page-header">
+    <div class="search">
+      <form class="search__form" action="/" method="post">
+        <input class="search__input" type="text" name="input" placeholder="Search">
+      </form>
+    </div>
+
+    <div class="page-header__notice">колькольчик</div>
+  </header>
+
+  <main class="page-main">
+    <h1 class="visually-hidden">Главная страница сайта курсов Ohara</h1>
+
+    <div class="courses-grader">
+      <h2 class="courses-grader__title">
+        All courses
+      </h2>
+      <ul class="courses-grader__list">
+        <li class="courses-grader__item">
+          <a class="courses-grader__link" href="#">
+            Ongoing
+          </a>
+        </li>
+        <li class="courses-grader__item">
+          <a class="courses-grader__link" href="#">
+            Favorite
+          </a>
+        </li>
+        <li class="courses-grader__item">
+          <a class="courses-grader__link" href="#">
+            Complete
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <section class="design">
+      <h3 class="course__title">UI/UX Design</h3>
+      <p class="course__lessons">20 lessons</p>
+      <p class="course__time">2h 20min</p>
+      <a class="course__video-link" href="#">
+        <img class="course__video-image" src="" alt="">
+      </a>
+      <a class="course__author-link" href="#">
+        <img class="course__author-image" src="" alt="">
+      </a>
+    </section>
+
+    <section class="photography">
+      <h3 class="course__title">photography</h3>
+      <p class="course__lessons">12 lessons</p>
+      <p class="course__time">1h 30min</p>
+      <a class="course__video-link" href="#">
+        <img class="course__video-image" src="" alt="">
+      </a>
+      <a class="course__author-link" href="#">
+        <img class="course__author-image" src="" alt="">
+      </a>
+    </section>
+
+    <section class="animation">
+      <h3 class="course__title">animation</h3>
+      <p class="course__lessons">12 lessons</p>
+      <p class="course__time">2h 30min</p>
+      <a class="course__video-link" href="#">
+        <img class="course__video-image" src="" alt="">
+      </a>
+      <a class="course__author-link" href="#">
+        <img class="course__author-image" src="" alt="">
+      </a>
+    </section>
+  </main>
+
+  <aside class="profile">
+    <div class="profile__current">
+      <img class="profile__image" src="" alt="">
+      <h2 class="profile__name">Alexa Rogue</h2>
+      <button class="profile__button" type="button" name="button"></button>
+    </div>
+
+    <div class="profile__progress">
+      <h4 class="profile__title">Progress</h4>
+      <ul class="profile__list">
+        <li class="profile__item">
+          <p class="profile__course-name">UI/UX Design</p>
+          <p class="profile__course-text">advanced</p>
+          <progress class="profile__course-progress" value="80" max="100">80%</progress>
+        </li>
+        <li class="profile__item">
+          <p class="profile__course-name">photography</p>
+          <p class="profile__course-text">intermediate</p>
+          <progress class="profile__course-progress" value="30" max="100">30%</progress>
+        </li>
+        <li class="profile__item">
+          <p class="profile__course-name">animation</p>
+          <p class="profile__course-text">advance</p>
+          <progress class="profile__course-progress" value="60" max="100">60%</progress>
+        </li>
+      </ul>
+    </div>
+
+    <div class="profile__tasks">
+      <ul class="profile__list">
+        <li class="profile__item">
+          <p class="profile__course-name">UI/UX - Discussion</p>
+          <p class="profile__course-text">27 Oct 2020, Tuesday</p>
+        </li>
+        <li class="profile__item">
+          <p class="profile__course-name">animation - 3D animation</p>
+          <p class="profile__course-text">27 Oct 2020, Tuesday</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="profile__app">
+      <p class="profile__download-text">Download Ohara Now!</p>
+      <a class="profile__google-link" href="#"></a>
+      <a class="profile__apple-link" href="#"></a>
+    </div>
+  </aside>
 </body>
 </html>
