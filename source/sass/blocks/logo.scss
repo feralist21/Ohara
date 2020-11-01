@@ -1,0 +1,22 @@
+.logo__icon {
+  display: inline-block;
+  padding: 7px 14px;
+  width: 48px;
+  height: 48px;
+  line-height: 1.33;
+  background-color: $blue;
+
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: $white;
+  text-decoration: none;
+  border-radius: 12px;
+}
+
+.logo__text {
+  @include font(22px, 600, 1.23);
+
+  text-decoration: none;
+  color: $blue;
+}

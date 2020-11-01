@@ -4,42 +4,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.min.css">
   <title>Ohara</title>
 </head>
 <body class="page">
   <nav class="page-menu">
-    <a class="logo logo-icon" href="#">
-      Ohara
-    </a>
+    <div class="logo">
+      <a class="logo__icon" href="#">
+        O
+      </a>
+      <a class="logo__text" href="#">
+        Ohara
+      </a>
+    </div>
 
-    <a class="button join-link" href="#">
-      join a course
+    <a class="button page-menu__join-link" href="#">
+      Join a course
     </a>
 
     <ul class="page-menu__list">
       <li class="page-menu__item">
-        <a class="page-menu__link" href="#">Dashboard</a>
+        <a class="page-menu__link page-menu__link--dash" href="#">Dashboard</a>
       </li>
       <li class="page-menu__item">
-        <a class="page-menu__link" href="#">All courses</a>
+        <a class="page-menu__link page-menu__link--crs" href="#">All courses</a>
       </li>
       <li class="page-menu__item">
-        <a class="page-menu__link" href="#">Resources</a>
+        <a class="page-menu__link page-menu__link--res" href="#">Resources</a>
       </li>
       <li class="page-menu__item">
-        <a class="page-menu__link" href="#">Friends</a>
+        <a class="page-menu__link page-menu__link--frd" href="#">Friends</a>
       </li>
       <li class="page-menu__item">
-        <a class="page-menu__link" href="#">Chats</a>
+        <a class="page-menu__link page-menu__link--chats" href="#">Chats</a>
       </li>
       <li class="page-menu__item">
-        <a class="page-menu__link" href="#">Settings</a>
+        <a class="page-menu__link page-menu__link--stn" href="#">Settings</a>
       </li>
     </ul>
 
     <ul class="page-menu__upgrade">
       <li class="page-menu__upgrade-item">
-        <a class="page-menu__upgrade-link" href="#">Upgrade</a>
+        <img class="page-menu__upgrade-img" src="img/frame.svg" alt="">
+        <p class="page-menu__upgrade-text">Upgrade to   for more resources</p>
+        <a class="button page-menu__upgrade-link" href="#">Upgrade</a>
       </li>
     </ul>
   </nav>
