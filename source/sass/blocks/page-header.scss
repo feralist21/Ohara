@@ -1,5 +1,5 @@
 .page-header {
-  background-color: $gray-text;
+  background-color: $gray-back;
 }
 
 .page-header__input {
@@ -27,7 +27,7 @@
   width: 20px;
   height: 25px;
 
-  background-color: $gray-text; 
+  background-color: $gray-back;
   background-image: url("../img/notice.svg");
   background-repeat: no-repeat;
   background-size: cover;

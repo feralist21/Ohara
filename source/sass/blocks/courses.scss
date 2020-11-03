@@ -1,0 +1,56 @@
+.courses__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.courses__item {
+  border-radius: 10px;
+
+  &-ui {
+    width: 872px;
+    height: 363px;
+
+
+    background-image: url("../img/ui-back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &-photography {
+    width: 415px;
+    height: 311px;
+
+    background-image: url("../img/photography-back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &-animation {
+    width: 415px;
+    height: 311px;
+
+    background-image: url("../img/animation-back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.course__title {
+  @include font(24px, 500, 1.21);
+  color: $white;
+}
+
+.course__lessons,
+.course__time {
+  @include font(18px, 400, 1.22);
+  color: $white;
+  opacity: 0.8;
+}
+
+.course__author-link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
