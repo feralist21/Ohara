@@ -79,6 +79,24 @@
     width: 24px;
     height: 24px;
   }
+
+  &--active {
+    color: $black;
+    font-weight: 600;
+    position: relative;
+  }
+
+  &--active::after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: -5px;
+    width: 3px;
+    height: 32px;
+    background-color: $blue;
+  }
+
+
 }
 
 .page-menu__upgrade {
