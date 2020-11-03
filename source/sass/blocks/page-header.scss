@@ -1,0 +1,36 @@
+.page-header {
+  background-color: $gray-text;
+}
+
+.page-header__input {
+  width: 472px;
+  height: 56px;
+  padding-left: 57px;
+
+  @include font(15px, 400, 1.2);
+  color: $black;
+
+  border-radius: 10px;
+  border: none;
+
+  background-image: url("../img/search-icon.svg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: 23px;
+}
+
+.page-header__input::placeholder {
+  color: $gray-text;
+}
+
+.page-header__notice {
+  width: 20px;
+  height: 25px;
+
+  background-color: $gray-text; 
+  background-image: url("../img/notice.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border: none;
+}
