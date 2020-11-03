@@ -1,0 +1,136 @@
+.profile__name {
+  @include font(20px, 600, 1.2);
+  color: $black;
+}
+
+.profile__button {
+  width: 10px;
+  height: 5px;
+  padding: 0;
+
+  border: none;
+  background-color: $white;
+  background-image: url("../img/profile-btn.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.profile__title {
+  @include font(18px, 600, 1.22);
+  color: $black;
+}
+
+.profile__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.profile__course-name {
+  @include font(16px, 600, 1.19);
+  color: $black;
+  text-decoration: none;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 48px;
+    height: 48px;
+
+    position: absolute;
+
+    border-radius: 6px;
+  }
+
+  &--ui::before {
+    background-color: $blue-profile;
+    background-image: url("../img/progress-ui.svg");
+    background-repeat: no-repeat;
+    background-size: 20px 23px;
+    background-position: 45% 50%;
+  }
+
+  &--photo::before {
+    background-color: $green-profile;
+    background-image: url("../img/progress-photo.svg");
+    background-repeat: no-repeat;
+    background-size: 23px 20px;
+    background-position: 50% 50%;
+  }
+
+  &--ani::before {
+    background-color: $orange-profile;
+    background-image: url("../img/progress-ani.svg");
+    background-repeat: no-repeat;
+    background-size: 24px 10px;
+    background-position: 50% 50%;
+  }
+
+  &--task-ui::before {
+    background-color: $blue-profile;
+    background-image: url("../img/task-ui.svg");
+    background-repeat: no-repeat;
+    background-size: 20px 18px;
+    background-position: 50% 50%;
+  }
+
+  &--task-ani::before {
+    background-color: $orange-profile;
+    background-image: url("../img/task-ani.svg");
+    background-repeat: no-repeat;
+    background-size: 22px 23px;
+    background-position: 50% 50%;
+  }
+}
+
+.profile__course-text {
+  @include font(14px, 400, 1.21);
+  color: $gray-aside;
+}
+
+.profile__download-text {
+  margin-bottom: 15px;
+
+  @include font(18px, 600, 1.33);
+  color: $black;
+}
+
+.profile__app {
+  background-color: $gray-back;
+  width: 312px;
+  height: 194px;
+
+  padding-top: 20px;
+  padding-left: 26px;
+
+  background-image: url("../img/profile-back-img.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border-radius: 9px;
+}
+
+.profile__link {
+
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  background-color: $white;
+
+  &--google {
+    margin-right: 14px;
+    background-image: url("../img/google.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 55%;
+  }
+
+  &--apple {
+    background-image: url("../img/apple.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 50%;
+  }
+}
