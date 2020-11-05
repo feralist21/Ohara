@@ -1,3 +1,10 @@
+.courses-grader {
+  display: grid;
+  grid-template-columns: 152px 1fr;
+  align-items: center;
+  margin-bottom: 36px;
+}
+
 .courses-grader__title {
   @include font(28px, 600, 1.21);
 
@@ -7,7 +14,19 @@
 .courses-grader__list {
   list-style: none;
   padding: 0;
+
   margin: 0;
+  margin-left: auto;
+
+  display: flex;
+}
+
+.courses-grader__item {
+  margin-right: 51px;
+}
+
+.courses-grader__item:last-child {
+  margin-right: 0;
 }
 
 .courses-grader__link {

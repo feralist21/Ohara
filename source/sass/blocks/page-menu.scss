@@ -1,6 +1,17 @@
+.page-menu {
+  grid-area: nav;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows:
+    144px
+    48px
+    1fr
+    316px;
+}
+
 .page-menu__join-link {
   display: block;
-
+  margin: 0 auto;
   width: 192px;
   height: 48px;
   padding: 16px 44px;
@@ -9,8 +20,9 @@
 }
 
 .page-menu__list {
+  width: 155px;
   list-style: none;
-  margin: 0;
+  margin: 48px 0 111px auto;
   padding: 0;
 }
 
@@ -18,18 +30,22 @@
   margin-bottom: 50px;
 }
 
+.page-menu__item:last-child {
+  margin-bottom: 0;
+}
+
 .page-menu__link {
-  padding-left: 25px;
 
   text-decoration: none;
 
   @include font(16px, 500, 1.2);
   color: $light-gray;
+  position: relative;
 
   &::before {
     content: "";
     position: absolute;
-    left: 0px;
+    left: -45px;
   }
 
   &--dash::before {
@@ -89,19 +105,17 @@
   &--active::after {
     content: "";
     position: absolute;
-    right: -20px;
+    right: -69px;
     top: -5px;
     width: 3px;
     height: 32px;
     background-color: $blue;
   }
-
-
 }
 
 .page-menu__upgrade {
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 

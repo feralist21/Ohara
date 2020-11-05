@@ -2,12 +2,22 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  display: grid;
+  grid-gap: 42px;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 1fr 1fr;
 }
 
 .courses__item {
   border-radius: 10px;
+  padding: 31px 36px 39px 35px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto 1fr;
+  align-items: flex-end;
 
   &-ui {
+    grid-column: 1 / 3;
     width: 872px;
     height: 363px;
 
@@ -20,6 +30,7 @@
   &-photography {
     width: 415px;
     height: 311px;
+    grid-column: 1 / 2;
 
     background-image: url("../img/photography-back.jpg");
     background-repeat: no-repeat;
@@ -29,6 +40,7 @@
   &-animation {
     width: 415px;
     height: 311px;
+    grid-column: 2 / 3;
 
     background-image: url("../img/animation-back.jpg");
     background-repeat: no-repeat;
@@ -39,6 +51,18 @@
 .course__title {
   @include font(24px, 500, 1.21);
   color: $white;
+  grid-column: 1 / 2;
+}
+
+.course__lessons {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+}
+
+.course__time {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  justify-self: flex-end;
 }
 
 .course__lessons,
@@ -48,7 +72,16 @@
   opacity: 0.8;
 }
 
+.course__video-link {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+
 .course__author-link {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  justify-self: flex-end;
+
   display: block;
   width: 40px;
   height: 40px;

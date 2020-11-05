@@ -1,0 +1,13 @@
+.page {
+  width: 1600px;
+  margin: 0 auto;
+  display: grid;
+
+  grid-template-areas:
+    "nav header aside"
+    "nav main   aside";
+  grid-template-columns: 272px 1fr 384px;
+  grid-template-rows:
+    auto
+    1fr;
+}
