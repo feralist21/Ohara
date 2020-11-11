@@ -1,0 +1,11 @@
+.page-main {
+  grid-area: main;
+  padding-top: 47px;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: grid;
+  grid-template-rows:
+    auto
+    1fr;
+  background-color: $gray-back;
+}

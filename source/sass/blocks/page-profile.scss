@@ -1,0 +1,234 @@
+.page-profile {
+  grid-area: aside;
+  padding-left: 32px;
+  display: grid;
+  grid-template-rows:
+    171px
+    315px
+    250px
+    auto;
+}
+
+.page-profile__current {
+  display: grid;
+  grid-template-columns: 56px 121px 10px;
+  grid-template-rows: 56px;
+  grid-column-gap: 26px;
+  align-items: center;
+
+  margin-top: 43px;
+}
+
+.page-profile__name {
+  @include font(20px, 600, 1.2);
+  color: $black;
+  text-decoration: none;
+}
+
+.page-profile__button {
+  width: 12px;
+  height: 7px;
+  padding: 0;
+
+  border: none;
+  background-color: $white;
+  background-image: url("../img/profile-btn.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.page-profile__button:hover {
+  transform: scale(1.2);
+}
+
+.page-profile__title {
+  margin-bottom: 31px;
+
+  @include font(18px, 600, 1.22);
+  color: $black;
+}
+
+.page-profile__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.page-profile__item {
+  margin-bottom: 27px;
+  display: grid;
+  grid-template-columns: 67px 103px 1fr;
+  grid-template-rows: 1fr auto;
+  align-items: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 48px;
+    height: 48px;
+
+    position: absolute;
+
+    border-radius: 6px;
+
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+  }
+
+  &--ui::before {
+    background-color: $blue-profile;
+    background-image: url("../img/progress-ui.svg");
+    background-repeat: no-repeat;
+    background-size: 20px 23px;
+    background-position: 45% 50%;
+  }
+
+  &--photo::before {
+    background-color: $green-profile;
+    background-image: url("../img/progress-photo.svg");
+    background-repeat: no-repeat;
+    background-size: 23px 20px;
+    background-position: 50% 50%;
+  }
+
+  &--ani::before {
+    background-color: $orange-profile;
+    background-image: url("../img/progress-ani.svg");
+    background-repeat: no-repeat;
+    background-size: 24px 10px;
+    background-position: 50% 50%;
+  }
+
+  &--task-ui::before {
+    background-color: $blue-profile;
+    background-image: url("../img/task-ui.svg");
+    background-repeat: no-repeat;
+    background-size: 20px 18px;
+    background-position: 50% 50%;
+  }
+
+  &--task-ani::before {
+    background-color: $orange-profile;
+    background-image: url("../img/task-ani.svg");
+    background-repeat: no-repeat;
+    background-size: 22px 23px;
+    background-position: 50% 50%;
+  }
+
+}
+
+.page-profile__item:last-child {
+  margin-bottom: 0;
+}
+
+.page-profile__course-name {
+  margin-bottom: 6px;
+  @include font(16px, 600, 1.19);
+  color: $black;
+  text-decoration: none;
+
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.page-profile__course-text {
+  @include font(14px, 400, 1.21);
+  color: $gray-aside;
+
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.page-profile__download-text {
+  margin-bottom: 15px;
+
+  @include font(18px, 600, 1.33);
+  color: $black;
+}
+
+.page-profile__course-progress {
+  display: block;
+  margin-left: 40px;
+
+  height: 8px;
+  border-radius: 21px;
+  grid-column: 3 / 4;
+  grid-row: 1 / 3;
+
+  &--ui {
+    width: 80px;
+    background-color: $blue;
+    box-shadow: 24px 0  0 0 rgba(94,129,244,0.2);
+  }
+
+  &--photo {
+    width: 44px;
+    background-color: $green-progress;
+    position: relative;
+
+   /* Не придумал ничего лучше чем использование псевдокласса О_о */
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 39px;
+
+      width: 65px;
+      height: 8px;
+      border-radius: 21px;
+      background-color: rgba(12,195,231,0.2);
+    }
+  }
+
+  &--ani {
+    width: 66px;
+    background-color: $orange-progress;
+    box-shadow: 38px 0 0 0 rgba(255,128,139,0.2);
+  }
+}
+
+.page-profile__app {
+  background-color: $gray-back;
+  width: 312px;
+  height: 194px;
+
+  padding-top: 20px;
+  padding-left: 26px;
+
+  background-image: url("../img/profile-back-img.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border-radius: 9px;
+}
+
+.page-profile__link {
+
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  background-color: $white;
+
+  &--google {
+    margin-right: 14px;
+    background-image: url("../img/google.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 55%;
+  }
+
+  &--apple {
+    background-image: url("../img/apple.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 50%;
+  }
+}
+
+.page-profile__tasks .page-profile__item {
+  grid-template-columns: 67px 1fr;
+  grid-template-rows: 1fr auto;
+}

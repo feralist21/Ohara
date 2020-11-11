@@ -1,0 +1,170 @@
+.page-menu {
+  grid-area: nav;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows:
+    144px
+    48px
+    1fr
+    316px;
+}
+
+.page-menu__join-link {
+  display: block;
+  margin: 0 auto;
+  width: 192px;
+  height: 48px;
+  padding: 16px 44px;
+
+  @include font(16px, 600, 1.19);
+}
+
+.page-menu__join-link:hover {
+  background-color: $red;
+  transition: background-color 0.3s linear;
+}
+
+.page-menu__list {
+  width: 155px;
+  list-style: none;
+  margin: 48px 0 111px auto;
+  padding: 0;
+}
+
+.page-menu__item {
+  margin-bottom: 50px;
+}
+
+.page-menu__item:last-child {
+  margin-bottom: 0;
+}
+
+.page-menu__link {
+
+  text-decoration: none;
+
+  @include font(16px, 500, 1.2);
+  color: $light-gray;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -45px;
+  }
+
+  &--dash::before {
+    background-image: url("../img/dashboard.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+  }
+
+  &--crs::before {
+    background-image: url("../img/all_courses.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+  }
+
+  &--res::before {
+    background-image: url("../img/resourses.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 23px;
+    height: 18px;
+  }
+
+  &--frd::before {
+    background-image: url("../img/friends.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 25px;
+    height: 22px;
+  }
+
+  &--chats::before {
+    background-image: url("../img/chats.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 22px;
+    height: 20px;
+  }
+
+  &--stn::before {
+    background-image: url("../img/settings.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+  }
+
+  &--active {
+    color: $black;
+    font-weight: 600;
+    position: relative;
+  }
+
+  &--active::after {
+    content: "";
+    position: absolute;
+    right: -69px;
+    top: -5px;
+    width: 3px;
+    height: 32px;
+    background-color: $blue;
+  }
+}
+
+.page-menu__link:hover {
+  color: $black;
+  font-weight: 600;
+}
+
+.page-menu__upgrade {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.page-menu__upgrade-item {
+  width: 192px;
+  height: 232px;
+  padding: 90px 24px 0;
+
+  border-radius: 12px;
+  background-color: $ligthen-gray;
+
+  position: relative;
+}
+
+.page-menu__upgrade-img {
+  position: absolute;
+  left: 60px;
+  top: -43px;
+}
+
+.page-menu__upgrade-text {
+  margin-bottom: 25px;
+
+  @include font(16px, 500, 1.38);
+  color: $blue-gray;
+  text-align: center;
+}
+
+.page-menu__upgrade-link {
+  display: block;
+  width: 144px;
+  height: 48px;
+  padding: 16px 38px;
+
+  @include font(16px, 600, 1.19);
+  color: $white;
+}
+
+.page-menu__upgrade-link:hover {
+  background-color: $red;
+  transition: background-color 0.3s linear;
+}
